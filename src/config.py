@@ -132,7 +132,8 @@ class Config:
     # 筹码分布开关（该接口不稳定，云端部署建议关闭）
     enable_chip_distribution: bool = True
     # 实时行情数据源优先级（逗号分隔）
-    realtime_source_priority: str = "akshare_sina,tencent,efinance,akshare_em"
+    # realtime_source_priority: str = "akshare_sina,tencent,efinance,akshare_em"
+    realtime_source_priority: str = "efinance,akshare_em,akshare_sina,tencent"
     # 实时行情缓存时间（秒）
     realtime_cache_ttl: int = 600
     # 熔断器冷却时间（秒）
